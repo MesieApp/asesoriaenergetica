@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Baratio - Asesoría Energética. Comparamos por ti, gratis y sin compromiso.">
+
+    <title>Baratio - Asesoría Energética</title>
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect fill='%231a5a9e' width='48' height='48' rx='8'/%3E%3Cpath fill='none' stroke='%23fff' stroke-width='2' d='M24 10 L34 20 V36 H14 V20 Z'/%3E%3Cpath fill='%23fff' d='M26 18 L22 26 H25 L23 32 L29 23 H26 Z'/%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- CABECERA -->
+    <header class="header">
+        <div class="container header__inner">
+
+            <a class="logo" href="#home">
+                <img class="logo__img" src="logoisi.png" alt="ISI asesores" width="120" height="60">
+            </a>
+
+            <nav class="nav" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="#services">Servicios</a></li>
+                    <li><a class="nav__link" href="#somos">Baratio</a></li>
+                    <li><a class="nav__link" href="#contacto-form">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" type="button" aria-label="Abrir menú">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="container hero__inner">
+
+            <div class="hero__content">
+                <h1 class="hero__title">Baratio</h1>
+                <h2 class="hero__subtitle">Mientras otros te venden lo suyo, Baratio busca lo mejor para ti.</h2>
+                <p class="hero__text">No somos una comercializadora. Somos tu asesoría de confianza. Comparamos por ti, gratís y sin compromiso.</p>
+                <a class="hero__cta" href="presupuesto.html">Empezar a ahorrar hoy</a>
+            </div>
+
+            <div class="hero__form-wrap">
+                <div class="form-card" id="contacto-form">
+                    <h3 class="form-card__title">¿Quieres ahorrar? Te llamamos</h3>
+                    <p class="form-card__subtitle">Esto va de ahorrar, no de venderte la moto.</p>
+
+                    <form class="form-card__form" action="#" method="post">
+                        <div class="form-card__field">
+                            <svg class="form-card__field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <input class="form-card__input" type="text" name="nombre" placeholder="Tu nombre*" required>
+                        </div>
+
+                        <div class="form-card__field">
+                            <svg class="form-card__field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <input class="form-card__input" type="tel" name="telefono" placeholder="Teléfono*" required>
+                        </div>
+
+                        <label class="form-card__terms">
+                            <input type="checkbox" name="acepto" value="1" required>
+                            <span>*He leído y acepto con <a class="form-card__link" href="#">Política de privacidad</a></span>
+                        </label>
+
+                        <button class="form-card__submit" type="submit">QUIERO SABER CUÁNTO PUEDO AHORRAR</button>
+                    </form>
+
+                    <hr class="form-card__divider">
+
+                    <p class="form-card__footnote">*El envío de los datos supone la aceptación de la <a class="form-card__link" href="#">Política de privacidad.</a></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FRANJA DE CONTACTO -->
+    <section class="contact-bar">
+        <div class="container contact-bar__grid">
+
+            <div class="contact-bar__item">
+                <div class="contact-bar__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                </div>
+                <h5 class="contact-bar__label">Teléfono</h5>
+                <p class="contact-bar__value">623 756 420</p>
+            </div>
+
+            <div class="contact-bar__item">
+                <div class="contact-bar__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                </div>
+                <h5 class="contact-bar__label">Email</h5>
+                <p class="contact-bar__value">gp.mesie@gmail.com</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NUESTROS SERVICIOS -->
+    <section class="services" id="services">
+        <div class="container">
+
+            <header class="services__header">
+                <h2 class="services__title">Nuestros Servicios</h2>
+                <p class="services__subtitle">Lo hacemos por ti. Y gratis.</p>
+            </header>
+
+            <div class="services__grid">
+
+                <article class="services__card">
+                    <div class="services__icon" aria-hidden="true">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="16" y="10" width="34" height="46" rx="3" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <line x1="22" y1="22" x2="44" y2="22" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                            <line x1="22" y1="30" x2="44" y2="30" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                            <line x1="22" y1="38" x2="38" y2="38" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                            <text x="26" y="52" fill="currentColor" font-family="Montserrat, sans-serif" font-size="13" font-weight="700">€</text>
+                            <circle cx="56" cy="50" r="11" stroke="currentColor" stroke-width="2"/>
+                            <line x1="64" y1="58" x2="70" y2="64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="services__card-title">Comparativa personalizada</h3>
+                    <p class="services__card-text">Analizamos tu factura y buscamos la mejor oferta según tu consumo real.</p>
+                </article>
+
+                <article class="services__card">
+                    <div class="services__icon" aria-hidden="true">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 30 H58" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <polyline points="50,22 58,30 50,38" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M66 50 H22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <polyline points="30,42 22,50 30,58" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="services__card-title">Cambio de compañía sin líos</h3>
+                    <p class="services__card-text">Si te interesa, hacemos el cambio por ti. Gratis, fácil y sin interrupciones.</p>
+                </article>
+
+                <article class="services__card">
+                    <div class="services__icon" aria-hidden="true">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="22" r="9" stroke="currentColor" stroke-width="2"/>
+                            <path d="M22 58 C22 42 58 42 58 58" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <rect x="30" y="44" width="20" height="13" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <line x1="34" y1="57" x2="46" y2="57" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                            <line x1="40" y1="57" x2="40" y2="62" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="services__card-title">Asesoría para hogares y empresas</h3>
+                    <p class="services__card-text">Ya seas particular, autónomo o pyme, te conseguimos la tarifa ideal.</p>
+                </article>
+
+                <article class="services__card">
+                    <div class="services__icon" aria-hidden="true">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="14" y="46" width="9" height="20" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <rect x="28" y="36" width="9" height="30" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <rect x="42" y="26" width="9" height="40" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <rect x="56" y="16" width="9" height="50" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <polyline points="12,38 30,28 46,34 68,14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="62,14 68,14 68,20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="services__card-title">Análisis de ahorro</h3>
+                    <p class="services__card-text">Te mostramos cuánto puedes ahorrar al mes y al año. Cifras claras, sin sorpresas.</p>
+                </article>
+
+                <article class="services__card">
+                    <div class="services__icon" aria-hidden="true">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M40 14 A18 18 0 1 1 22 32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <polyline points="22,32 22,20 34,20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M40 66 A18 18 0 1 0 58 48" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <polyline points="58,48 58,60 46,60" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="services__card-title">Seguimiento de tarifas</h3>
+                    <p class="services__card-text">Las tarifas cambian. Nosotros te avisamos cuando haya una opción mejor para ti.</p>
+                </article>
+
+                <article class="services__card">
+                    <div class="services__icon services__icon--solid" aria-hidden="true">
+                        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="24" r="11" fill="currentColor"/>
+                            <path d="M18 62 C18 46 62 46 62 62 L62 68 H18 Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="services__card-title">Atención personalizada</h3>
+                    <p class="services__card-text">No eres un número. Te asignamos un asesor que te lo explica todo en persona o por teléfono.</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="cta-banner">
+        <div class="container cta-banner__inner">
+            <a class="cta-banner__btn cta-banner__btn--blue" href="#contacto-form">Empezar a ahorrar hoy</a>
+        </div>
+    </div>
+
+    <!-- ¿QUIÉNES SOMOS? -->
+    <section class="somos" id="somos">
+        <div class="container somos__inner">
+
+            <div class="somos__content">
+                <p class="somos__label">¿Quiénes somos?</p>
+                <h2 class="somos__title">No vendemos tarifas. Te ayudamos a elegir la mejor.</h2>
+                <p class="somos__text">En Baratio somos una asesoría energética independiente. No te vendemos nada, porque no tenemos nada que venderte. Nuestro trabajo es ayudarte a pagar menos en tus facturas, sin líos y sin trampas. Analizamos tu consumo, estudiamos las ofertas del mercado y te mostramos cuál se adapta mejor a ti. Tú decides si quieres hacer el cambio. Y si lo haces, también lo gestionamos por ti. Porque creemos que ahorrar debería ser fácil, y entender tu factura… también.</p>
+            </div>
+
+            <div class="somos__illustration" aria-hidden="true">
+                <svg class="somos__svg" viewBox="0 0 440 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <!-- Bocadillo superior: barras + flecha descendente -->
+                    <ellipse cx="76" cy="54" rx="54" ry="33" fill="#ffffff" stroke="#1a3a5e" stroke-width="1.8"/>
+                    <rect x="46" y="60" width="6" height="14" rx="1" fill="#1a3a5e" opacity="0.35"/>
+                    <rect x="58" y="52" width="6" height="22" rx="1" fill="#1a3a5e" opacity="0.5"/>
+                    <rect x="70" y="56" width="6" height="18" rx="1" fill="#1a3a5e" opacity="0.4"/>
+                    <rect x="82" y="44" width="6" height="30" rx="1" fill="#1a3a5e"/>
+                    <rect x="94" y="50" width="6" height="24" rx="1" fill="#1a3a5e" opacity="0.65"/>
+                    <path d="M42 46 L106 70" stroke="#1a3a5e" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M98 64 L106 70 L112 64" stroke="#1a3a5e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+                    <!-- Conectores de pensamiento (superior) -->
+                    <circle cx="138" cy="80" r="4.5" fill="#ffffff" stroke="#1a3a5e" stroke-width="1.8"/>
+                    <circle cx="158" cy="92" r="3.2" fill="#ffffff" stroke="#1a3a5e" stroke-width="1.8"/>
+                    <circle cx="176" cy="104" r="2.2" fill="#ffffff" stroke="#1a3a5e" stroke-width="1.8"/>
+
+                    <!-- Bocadillo inferior: barras + flecha ascendente -->
+                    <ellipse cx="80" cy="168" rx="50" ry="31" fill="#ffffff" stroke="#1a3a5e" stroke-width="1.8"/>
+                    <rect x="50" y="176" width="6" height="11" rx="1" fill="#1a3a5e" opacity="0.35"/>
+                    <rect x="62" y="170" width="6" height="17" rx="1" fill="#1a3a5e" opacity="0.5"/>
+                    <rect x="74" y="162" width="6" height="25" rx="1" fill="#1a3a5e" opacity="0.7"/>
+                    <rect x="86" y="154" width="6" height="33" rx="1" fill="#1a3a5e"/>
+                    <rect x="98" y="160" width="6" height="27" rx="1" fill="#1a3a5e" opacity="0.6"/>
+                    <path d="M46 180 L62 166 L78 172 L102 150" stroke="#1a3a5e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M96 150 L102 150 L102 156" stroke="#1a3a5e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+                    <!-- Conectores de pensamiento (inferior) -->
+                    <circle cx="132" cy="156" r="3.5" fill="#ffffff" stroke="#1a3a5e" stroke-width="1.8"/>
+                    <circle cx="152" cy="144" r="2.5" fill="#ffffff" stroke="#1a3a5e" stroke-width="1.8"/>
+
+                    <!-- Torso — trapecio redondeado, sin brazos -->
+                    <path d="M216 200 C208 215 204 285 210 345 C214 385 228 412 252 418 L308 418 C332 412 346 385 350 345 C356 285 352 215 344 200 C330 188 308 182 280 182 C252 182 230 188 216 200 Z" fill="#4a7fd6" stroke="#2d3748" stroke-width="1.8" stroke-linejoin="round"/>
+
+                    <!-- Escote -->
+                    <path d="M252 200 Q280 222 308 200" stroke="#2d3748" stroke-width="1.8" stroke-linecap="round"/>
+
+                    <!-- Cuello -->
+                    <rect x="266" y="150" width="28" height="52" rx="4" fill="#f0d4b8" stroke="#2d3748" stroke-width="1.8"/>
+
+                    <!-- Cabeza -->
+                    <ellipse cx="280" cy="122" rx="26" ry="28" fill="#f0d4b8" stroke="#2d3748" stroke-width="1.8"/>
+
+                    <!-- Pelo rubio — casquete superior -->
+                    <path d="M256 96 C260 76 272 68 280 66 C288 68 300 76 304 96 C298 86 290 80 280 78 C270 80 262 86 256 96 Z" fill="#e8c468" stroke="#2d3748" stroke-width="1.8" stroke-linejoin="round"/>
+                    <path d="M274 72 Q280 84 286 72" stroke="#d4ad52" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+
+                    <!-- Pelo rubio — mechón lateral izquierdo -->
+                    <path d="M254 104 C244 118 236 148 234 178 C232 208 236 232 242 242 C246 234 244 200 248 162 C252 128 254 112 254 104 Z" fill="#e8c468" stroke="#2d3748" stroke-width="1.8" stroke-linejoin="round"/>
+
+                    <!-- Pelo rubio — mechón lateral derecho -->
+                    <path d="M306 104 C316 118 324 148 326 178 C328 208 324 232 318 242 C314 234 316 200 312 162 C308 128 306 112 306 104 Z" fill="#e8c468" stroke="#2d3748" stroke-width="1.8" stroke-linejoin="round"/>
+
+                    <!-- Pelo rubio — caída sobre hombros (detrás) -->
+                    <path d="M238 228 C242 238 248 242 254 238" stroke="#e8c468" stroke-width="10" stroke-linecap="round"/>
+                    <path d="M322 228 C318 238 312 242 306 238" stroke="#e8c468" stroke-width="10" stroke-linecap="round"/>
+
+                    <!-- Ojos -->
+                    <ellipse cx="266" cy="124" rx="2.5" ry="3" fill="#2d3748"/>
+                    <ellipse cx="294" cy="124" rx="2.5" ry="3" fill="#2d3748"/>
+
+                    <!-- Gafas -->
+                    <ellipse cx="266" cy="124" rx="13" ry="11" stroke="#2d3748" stroke-width="1.8"/>
+                    <ellipse cx="294" cy="124" rx="13" ry="11" stroke="#2d3748" stroke-width="1.8"/>
+                    <path d="M279 124 H285" stroke="#2d3748" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M253 122 L240 118" stroke="#2d3748" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M307 122 L320 118" stroke="#2d3748" stroke-width="1.8" stroke-linecap="round"/>
+
+                    <!-- Pestañas -->
+                    <path d="M260 114 L258 110" stroke="#2d3748" stroke-width="1.2" stroke-linecap="round"/>
+                    <path d="M266 112 L266 108" stroke="#2d3748" stroke-width="1.2" stroke-linecap="round"/>
+                    <path d="M272 114 L274 110" stroke="#2d3748" stroke-width="1.2" stroke-linecap="round"/>
+                    <path d="M288 114 L286 110" stroke="#2d3748" stroke-width="1.2" stroke-linecap="round"/>
+                    <path d="M294 112 L294 108" stroke="#2d3748" stroke-width="1.2" stroke-linecap="round"/>
+                    <path d="M300 114 L302 110" stroke="#2d3748" stroke-width="1.2" stroke-linecap="round"/>
+
+                    <!-- Pendientes -->
+                    <circle cx="252" cy="134" r="2" fill="#d4847a" stroke="#2d3748" stroke-width="1"/>
+                    <circle cx="308" cy="134" r="2" fill="#d4847a" stroke="#2d3748" stroke-width="1"/>
+
+                    <!-- Labios — sonrisa cálida -->
+                    <path d="M269 138 Q280 132 291 138 Q280 150 269 138 Z" fill="#d4847a" stroke="#2d3748" stroke-width="1.4" stroke-linejoin="round"/>
+
+                </svg>
+            </div>
+
+        </div>
+
+        <div class="cta-banner cta-banner--in-somos">
+            <div class="container cta-banner__inner">
+                <a class="cta-banner__btn cta-banner__btn--white" href="#contacto-form">Empezar a ahorrar hoy</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="container footer__grid">
+
+                <div class="footer__col footer__col--logo">
+                    <a class="footer-logo" href="index.html">
+                        <svg class="footer-logo__icon" viewBox="0 0 48 48" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="4" width="40" height="40" rx="6" fill="rgba(255,255,255,0.06)"/>
+                            <path d="M24 8 L38 22 V40 H10 V22 Z" fill="none" stroke="#5eb8e8" stroke-width="2.2" stroke-linejoin="round"/>
+                            <rect x="19" y="28" width="10" height="12" fill="none" stroke="#5eb8e8" stroke-width="1.6" rx="0.5"/>
+                            <path d="M26 16 L22 24 H25 L23 30 L29 21 H26 Z" fill="#5eb8e8"/>
+                        </svg>
+                        <span class="footer-logo__text">
+                            <span class="footer-logo__name">Baratio</span>
+                            <span class="footer-logo__tagline">ASESORÍA ENERGÉTICA</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="footer__col">
+                    <h5 class="footer__heading">Contáctanos</h5>
+                    <p class="footer__line"><a class="footer__link" href="mailto:gp.mesie@gmail.com">gp.mesie@gmail.com</a></p>
+                    <p class="footer__line">+34 623 756 420</p>
+                </div>
+
+                <div class="footer__col">
+                    <h5 class="footer__heading">Legal</h5>
+                    <a class="footer__legal-link" href="aviso-legal.html">Aviso Legal</a>
+                    <a class="footer__legal-link" href="privacidad.html">Privacidad</a>
+                    <a class="footer__legal-link" href="politica-de-cookies.html">Política de Cookies</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
