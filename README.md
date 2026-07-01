@@ -1,12 +1,12 @@
-# Baratio - Réplica de asesoriaenergetica
+# ISI Asesores - Sitio web asesoriaenergetica
 
-Réplica estática (HTML/CSS/JS) del sitio https://baratio.es/, lista para abrir en Cursor.
+Sitio estático (HTML/CSS) de ISI Asesores Energéticos, lista para abrir en Cursor.
 
 ## Cómo usarlo
 
 1. Copia el contenido de esta carpeta dentro de tu carpeta `asesoriaenergetica` en el Escritorio (sustituye el README.md que ya tenías, o fusiónalos).
 2. Abre `index.html` directamente en el navegador, o mejor, usa un servidor local (en Cursor: extensión "Live Server", clic derecho sobre `index.html` → "Open with Live Server"). Esto evita problemas de rutas relativas y de CORS con las fuentes/CDNs.
-3. Sube los cambios a GitHub con `git add . && git commit -m "Réplica web Baratio" && git push`.
+3. Sube los cambios a GitHub con `git add . && git commit -m "Actualización web ISI Asesores" && git push`.
 
 ## Qué incluye
 
@@ -25,6 +25,6 @@ Bootstrap 4.1.3, Animate.css, FontAwesome 5 y Magnific Popup se cargan vía CDN 
 - Un backend propio (PHP, Node, lo que prefieras) que reciba el POST y envíe el email/lo guarde en una base de datos, o
 - Un servicio externo tipo Formspree, Web3Forms o similar, cambiando la lógica en `js/custom.js`.
 
-**Las imágenes son placeholders genéricos** (logo, ilustraciones, iconos), generados con los colores de marca (#1a5a9e). Sustitúyelos en la carpeta `images/` por los archivos reales de Baratio cuando los tengas, manteniendo los mismos nombres de archivo para que no haya que tocar el HTML.
+**Las imágenes son placeholders genéricos** (logo, ilustraciones, iconos), generados con los colores de marca (#1a5a9e). Sustitúyelos en la carpeta `images/` por los archivos reales de ISI Asesores cuando los tengas, manteniendo los mismos nombres de archivo para que no haya que tocar el HTML.
 
 **Las páginas enlazadas no existen todavía**: `presupuesto.html`, `empleo.html`, `aviso-legal.html`, `privacidad.html`, `politica-de-cookies.html`. Los enlaces del menú y botones apuntan a ellas pero darán 404 hasta que las crees.
