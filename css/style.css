@@ -310,6 +310,69 @@ img, svg {
   border-color: #aaa;
 }
 
+.form-card__tipo {
+  border: none;
+  padding: 0;
+  margin: 0 0 14px;
+}
+
+.form-card__tipo-label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #7c8595;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.form-card__tipo-options {
+  display: flex;
+  gap: 10px;
+}
+
+.form-card__pill {
+  flex: 1;
+  cursor: pointer;
+}
+
+.form-card__pill input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.form-card__pill span {
+  display: block;
+  text-align: center;
+  padding: 11px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.form-card__pill input:checked + span {
+  color: #fff;
+  background: #24A14A;
+  border-color: #24A14A;
+}
+
+.form-card__pill input:focus-visible + span {
+  outline: 2px solid #24A14A;
+  outline-offset: 2px;
+}
+
+.form-card__success {
+  text-align: center;
+  margin: 28px 0;
+}
+
 .form-card__terms {
   display: flex;
   align-items: flex-start;

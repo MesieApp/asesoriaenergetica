@@ -60,7 +60,7 @@
                     <h3 class="form-card__title">¿Quieres ahorrar? Te llamamos</h3>
                     <p class="form-card__subtitle">Esto va de ahorrar, no de venderte la moto.</p>
 
-                    <form class="form-card__form" action="#" method="post">
+                    <form class="form-card__form">
                         <div class="form-card__field">
                             <svg class="form-card__field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
@@ -75,6 +75,20 @@
                             </svg>
                             <input class="form-card__input" type="tel" name="telefono" placeholder="Teléfono*" required>
                         </div>
+
+                        <fieldset class="form-card__tipo">
+                            <legend class="form-card__tipo-label">¿Hogar o empresa?*</legend>
+                            <div class="form-card__tipo-options">
+                                <label class="form-card__pill">
+                                    <input type="radio" name="tipo" value="hogar" required>
+                                    <span>Hogar</span>
+                                </label>
+                                <label class="form-card__pill">
+                                    <input type="radio" name="tipo" value="empresa">
+                                    <span>Empresa</span>
+                                </label>
+                            </div>
+                        </fieldset>
 
                         <label class="form-card__terms">
                             <input type="checkbox" name="acepto" value="1" required>
@@ -115,7 +129,7 @@
                     </svg>
                 </div>
                 <h5 class="contact-bar__label">Email</h5>
-                <p class="contact-bar__value">gp.mesie@gmail.com</p>
+                <p class="contact-bar__value">hola@isiasesores.com</p>
             </div>
 
         </div>
@@ -352,7 +366,7 @@
 
                 <div class="footer__col">
                     <h5 class="footer__heading">Contáctanos</h5>
-                    <p class="footer__line"><a class="footer__link" href="mailto:gp.mesie@gmail.com">gp.mesie@gmail.com</a></p>
+                    <p class="footer__line"><a class="footer__link" href="mailto:hola@isiasesores.com">hola@isiasesores.com</a></p>
                     <p class="footer__line">+34 623 756 420</p>
                 </div>
 
@@ -366,6 +380,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    (function () {
+        var formCard = document.getElementById('contacto-form');
+        var form = formCard && formCard.querySelector('.form-card__form');
+        if (!form) return;
+
+        var ENDPOINT = 'https://script.google.com/macros/s/AKfycbwnOZeSkvj3JZLTiE7JzxhOlPSsJSbARnwf8aJ-1zMxYRZtURUBpkAH0WVTJsEpiXNtbw/exec';
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var data = new FormData(form);
+            var payload = {
+                nombre: data.get('nombre'),
+                telefono: data.get('telefono'),
+                tipo: data.get('tipo')
+            };
+
+            fetch(ENDPOINT, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            }).finally(function () {
+                formCard.innerHTML = '<p class="form-card__title form-card__success">¡Gracias! Te llamamos en breve.</p>';
+            });
+        });
+    })();
+    </script>
 
 </body>
 </html>
