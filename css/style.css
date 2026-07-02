@@ -611,6 +611,11 @@ img, svg {
   padding: 45px 0;
 }
 
+.cta-banner--in-somos {
+  position: relative;
+  z-index: 1;
+}
+
 .cta-banner__inner {
   display: flex;
   justify-content: center;
@@ -644,11 +649,13 @@ img, svg {
 
 .cta-banner__btn--white {
   color: #24A14A;
-  background: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
 }
 
 .cta-banner__btn--white:hover {
+  color: #24A14A;
+  background-color: #ffffff;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
   transform: translateY(-1px);
 }
@@ -739,6 +746,10 @@ img, svg {
   width: 44px;
   height: 44px;
   flex-shrink: 0;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 3px;
 }
 
 .footer-logo__text {
