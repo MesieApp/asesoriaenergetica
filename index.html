@@ -385,15 +385,83 @@
         if (!form) return;
 
         var ENDPOINT = 'https://script.google.com/macros/s/AKfycbwnOZeSkvj3JZLTiE7JzxhOlPSsJSbARnwf8aJ-1zMxYRZtURUBpkAH0WVTJsEpiXNtbw/exec';
+        var PHONE_REGEX = /^[67][0-9]{8}$/;
+
+        var nombreInput = form.querySelector('[name="nombre"]');
+        var telefonoInput = form.querySelector('[name="telefono"]');
+        var telefonoField = telefonoInput.closest('.form-card__field');
+        var tipoContainer = form.querySelector('.form-card__tipo');
+        var tipoInputs = form.querySelectorAll('input[name="tipo"]');
+        var aceptoInput = form.querySelector('[name="acepto"]');
+
+        function showError(container, message) {
+            var error = container.querySelector('.form-card__error');
+            if (!error) {
+                error = document.createElement('p');
+                error.className = 'form-card__error';
+                container.appendChild(error);
+            }
+            error.textContent = message;
+        }
+
+        function hideError(container) {
+            var error = container.querySelector('.form-card__error');
+            if (error) {
+                error.remove();
+            }
+        }
+
+        telefonoInput.addEventListener('input', function () {
+            hideError(telefonoField);
+        });
+
+        tipoInputs.forEach(function (radio) {
+            radio.addEventListener('change', function () {
+                hideError(tipoContainer);
+            });
+        });
 
         form.addEventListener('submit', function (event) {
             event.preventDefault();
 
             var data = new FormData(form);
+            var nombre = (data.get('nombre') || '').trim();
+            var telefonoDigits = (data.get('telefono') || '').replace(/\D/g, '');
+            var tipo = data.get('tipo');
+            var isValid = true;
+
+            if (!PHONE_REGEX.test(telefonoDigits)) {
+                showError(telefonoField, 'El número introducido no es correcto');
+                isValid = false;
+            } else {
+                hideError(telefonoField);
+            }
+
+            if (tipo !== 'hogar' && tipo !== 'empresa') {
+                showError(tipoContainer, 'Rellena el campo Hogar / Empresa');
+                isValid = false;
+            } else {
+                hideError(tipoContainer);
+            }
+
+            if (!nombre) {
+                nombreInput.reportValidity();
+                isValid = false;
+            }
+
+            if (!aceptoInput.checked) {
+                aceptoInput.reportValidity();
+                isValid = false;
+            }
+
+            if (!isValid) {
+                return;
+            }
+
             var payload = {
-                nombre: data.get('nombre'),
-                telefono: data.get('telefono'),
-                tipo: data.get('tipo')
+                nombre: nombre,
+                telefono: telefonoDigits,
+                tipo: tipo
             };
 
             fetch(ENDPOINT, {
